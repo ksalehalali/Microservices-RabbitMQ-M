@@ -20,6 +20,7 @@ namespace Core.RabbitMq.BusConfiguration
             return Bus.Factory.CreateUsingRabbitMq(cfg =>
             {
                 
+                //cfg.UseMessageRetry(retry => retry.Interval(5, 1000));
                 cfg.Host(new Uri(@"rabbitmq://" + RabbitMqSetting.HostName + @"/"), hst =>
                 {
                     hst.Username(RabbitMqSetting.UserName);
