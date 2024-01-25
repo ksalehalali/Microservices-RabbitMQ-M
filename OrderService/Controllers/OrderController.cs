@@ -11,13 +11,15 @@ namespace OrderService.Controllers
     {
         private readonly IBus _bus;
         private readonly ILogger<OrderController> _logger;
-
+        public bool connected { get; set; } =false;
         public OrderController(ILogger<OrderController> logger, IBus bus)
         {
             _logger = logger;
             _bus = bus;
         }
 
+
+    
         [HttpPost]
         [Route("CreateOrder")]
         public async Task<IActionResult> CreateOrder([FromBody] OrderPrice orderModel)

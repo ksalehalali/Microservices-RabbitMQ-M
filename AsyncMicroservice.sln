@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34407.89
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderService", "OrderService\OrderService.csproj", "{CBBBFA1A-5EB8-4B59-BECC-592DE43A840C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderService", "OrderService\OrderService.csproj", "{CBBBFA1A-5EB8-4B59-BECC-592DE43A840C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartService", "CartService\CartService.csproj", "{C7021E96-68A2-4BD7-8827-6CE5FD5A2D97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CartService", "CartService\CartService.csproj", "{C7021E96-68A2-4BD7-8827-6CE5FD5A2D97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{6F719A90-2DA4-411C-849E-79D7EE513426}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{6F719A90-2DA4-411C-849E-79D7EE513426}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Message", "Message\Message.csproj", "{6D020063-A227-4853-B787-691E277E2C4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Message", "Message\Message.csproj", "{6D020063-A227-4853-B787-691E277E2C4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchestrator.Presistance", "Orchestrator.Presistance\Orchestrator.Presistance.csproj", "{CDA574E7-88B5-49F2-A895-FC0D3F8379DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchestrator", "Orchestrator\Orchestrator.csproj", "{AA153325-4482-43C3-868A-D6D2E6A4AD5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{6D020063-A227-4853-B787-691E277E2C4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D020063-A227-4853-B787-691E277E2C4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D020063-A227-4853-B787-691E277E2C4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDA574E7-88B5-49F2-A895-FC0D3F8379DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDA574E7-88B5-49F2-A895-FC0D3F8379DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDA574E7-88B5-49F2-A895-FC0D3F8379DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDA574E7-88B5-49F2-A895-FC0D3F8379DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA153325-4482-43C3-868A-D6D2E6A4AD5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA153325-4482-43C3-868A-D6D2E6A4AD5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA153325-4482-43C3-868A-D6D2E6A4AD5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA153325-4482-43C3-868A-D6D2E6A4AD5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

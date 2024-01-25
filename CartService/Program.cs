@@ -1,6 +1,7 @@
 using CartService.Consumer;
 using Core.RabbitMq.BusConfiguration;
 using MassTransit;
+using OrderService.Consumer;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddMassTransit(cfg =>
 {
     cfg.AddConsumersFromNamespaceContaining<IConsumerRegiter>();
+    cfg.AddConsumersFromNamespaceContaining<IConsumerRegister>();
+
     cfg.AddBus(provider => RabbitMqBus.ConfigureBusWebApi(provider, builder.Configuration));
 });
 builder.Services.AddHostedService<MassTransitHostedService>();

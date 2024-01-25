@@ -18,6 +18,7 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\Core\Core.csproj" />
 	  <ProjectReference Include="..\Message\Message.csproj" />
+	  <ProjectReference Include="..\OrderService\OrderService.csproj" />
 	</ItemGroup>
 
 </Project>
